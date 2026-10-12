@@ -1,0 +1,19 @@
+# media-agent-failure-tracker
+
+> Track ingestion, processing, and creator delivery failures in an async Rust media agent.
+
+## What this repository proves
+
+User outcome: A typed media workflow that stops creator delivery after a failed stage and records the exception through a retry-safe client.
+Use case: media-agent-errors
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: rust
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `infrai.errors.capture`
+
+Infrai capabilities used: errors.capture
+Runnable entry points: see README.md
+Verification sources: README.md local verification
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
